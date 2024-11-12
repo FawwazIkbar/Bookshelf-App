@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #cfd8dc;
+}
+header {
+  background-color: #607d8b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+section {
+  border: solid 1px black;
+  border-radius: 16px;
+  background-color: #607d8b;
+  width: 700px;
+  color: #cfd8dc;
+  margin: 12px 0;
+  box-shadow: 0 10px 15px rgba(34, 61, 70, 0.5);
+}
+section h2 {
+  display: flex;
+  justify-content: center;
+  background-color: #455a64;
+  margin-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  margin-top: 0;
+  padding: 5px 0px;
+}
+.form {
+  display: flex;
+  padding: 25px 40px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.form-group input {
+  margin-bottom: 12px;
+  padding: 12px;
+  height: 45px;
+  font-size: 18px;
+  border-radius: 16px;
+
+  border: none;
+  outline: none;
+  color: #607d8b;
+  font-weight: 700;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.878);
+}
+.form-group-done {
+  font-size: 18px;
+}
+.form .button {
+  border-radius: 16px;
+  padding: 10px;
+  font-size: 16px;
+  border: #455a64;
+  background-color: #cfd8dc;
+  box-shadow: 0 10px 15px rgba(34, 61, 70, 0.5);
+  margin-top: 8px;
+  font-weight: 600;
+  color: #455a64;
+  transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+}
+.form button:hover {
+  transform: scale(0.95);
+  background-color: #455a64;
+  color: #cfd8dc;
+}
+
+.list-book-item {
+  padding: 0 20px 30px 20px;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  border-radius: 16px;
+}
+
+.list-book-item h3,
+p {
+  color: black;
+}
+
+.btn-item .btn-done {
+  border-radius: 16px;
+  background-color: #4caf50;
+  padding: 8px;
+  color: white;
+  transition: background-color 0.1s ease-in, transform 0.1s ease-in;
+}
+.btn-item .btn-done:hover {
+  background-color: #388e3c;
+  transform: scale(0.95);
+}
+
+.btn-item .btn-undo {
+  border-radius: 16px;
+  background-color: rgb(15, 199, 15);
+  padding: 8px;
+  color: white;
+}
+
+.btn-item .btn-undo:hover {
+  background-color: #388e3c;
+  transform: scale(0.95);
+}
+.btn-item .btn-delete {
+  border-radius: 16px;
+  background-color: #f44336;
+  padding: 8px;
+  color: white;
+  margin: 0px 12px;
+}
+
+.btn-item .btn-delete:hover {
+  background-color: #d32f2f;
+  transform: scale(0.95);
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #607d8b;
+  color: #d7e1e5;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(34, 61, 70, 0.5);
+  transition: opacity 0.5s ease;
+  opacity: 0.9;
+  z-index: 1000;
+}
